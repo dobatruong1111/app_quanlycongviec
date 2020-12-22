@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/an_more_vert_list_job"
+        android:title="Ẩn"/>
+    <item
+        android:title="Xóa"
+        android:id="@+id/xoa_more_vert_list_job"/>
+</menu>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.verifyForgotPassPhoneActivity"
+    android:layout_margin="20dp">
+
+    <ImageButton
+        android:id="@+id/btn_forgot_back_sign_in_step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_back_activity"
+        android:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_forgot_pass_step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignBottom="@+id/btn_forgot_back_sign_in"
+
+        android:fontFamily="@font/cunia"
+        android:includeFontPadding="false"
+        android:text="Forgot Password"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/black"
+
+        android:textSize="28sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_description_forgot_step2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/tv_forgot_pass"
+        android:layout_marginTop="30dp"
+
+        android:gravity="center"
+        android:text="Enter OTP verify was sent to your phone number to get new password."
+        android:textSize="18dp"
+        android:fontFamily="@font/ailerson_light"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/box_code_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_forgot_pass_step2"
+        android:layout_marginTop="200dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/otp_1"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="#212121"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            tools:ignore="Label For" />
+
+        <EditText
+            android:id="@+id/otp_2"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="#212121"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            tools:ignore="Label For" />
+
+        <EditText
+            android:id="@+id/otp_3"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="#212121"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            tools:ignore="Label For" />
+
+        <EditText
+            android:id="@+id/otp_4"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="#212121"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            tools:ignore="Label For" />
+
+        <EditText
+            android:id="@+id/otp_5"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="#212121"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            tools:ignore="Label For" />
+
+        <EditText
+            android:id="@+id/otp_6"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="#212121"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            tools:ignore="Label For" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_verify_phone_forgot"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+
+        android:layout_marginTop="160dp"
+        android:backgroundTint="#1E1E1E"
+        android:elevation="10dp"
+
+        android:fontFamily="@font/cunia"
+        android:includeFontPadding="false"
+        android:text="Verify"
+        android:textColor="@color/white"
+        android:layout_below="@+id/box_code_otp"
+
+        android:textSize="20dp"
+        android:translationZ="15dp"
+
+        app:cornerRadius="10dp"
+        android:clickable="true"
+        ></com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tip_new_pass_forgot"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:elevation="5dp"
+        android:translationZ="15dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:passwordToggleEnabled="true"
+
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        android:textCursorDrawable="@color/black"
+        android:visibility="invisible"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textCursorDrawable="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tip_cf_new_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip_new_pass_forgot"
+        android:layout_marginTop="5dp"
+        android:elevation="5dp"
+        android:translationZ="15dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:passwordToggleEnabled="true"
+
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        android:textCursorDrawable="@color/black"
+        android:visibility="invisible"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Confirm New Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textCursorDrawable="@color/black"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_verify_forgot"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/btn_verify_phone_forgot"
+        android:layout_marginBottom="6dp"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="#567BEB"
+        style="?android:attr/progressBarStyleLarge"/>
+
+
+</RelativeLayout>

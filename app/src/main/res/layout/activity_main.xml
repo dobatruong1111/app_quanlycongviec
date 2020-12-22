@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".Activity.ListCardActivity"
+    android:background="@drawable/haidang"
+    >
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#314CE1"
+        android:theme="@style/Base.CardView">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <EditText
+            android:id="@+id/search_edittext"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:hint="Search ListCard"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+        <ImageButton
+            android:id="@+id/back_search"
+            android:background="#314CE1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="18dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:background="#314CE1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="18dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/name_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/arrow_back"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/menu_listcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="18dp"
+            android:background="#314CE1"
+            android:src="@drawable/ic_baseline_more_vert_24" />
+
+        <ImageButton
+            android:id="@+id/id_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="18dp"
+            android:background="#314CE1"
+            android:src="@drawable/ic_baseline_search_24" />
+
+    </RelativeLayout>
+    </Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvList"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="0dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/f1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#314CE1"
+        android:src="@drawable/add"
+        app:borderWidth="0dp" />
+
+
+</RelativeLayout>

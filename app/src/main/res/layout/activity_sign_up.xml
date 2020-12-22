@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.signUpActivity"
+
+    android:layout_margin="20dp"
+    >
+
+    <ImageButton
+        android:id="@+id/btn_sign_up_back_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_activity"
+        android:tint="@color/black"
+        android:backgroundTint="@color/white"
+        android:background="@null"
+        />
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:fontFamily="@font/cunia"
+
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:includeFontPadding="false"
+
+        android:layout_alignBottom="@+id/btn_sign_up_back_intro"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_description_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/ailerson_light"
+        android:text="You can register by email or phone number."
+        android:textSize="18dp"
+        android:textColor="@color/black"
+
+        android:gravity="center"
+        android:layout_below="@+id/tv_sign_up"
+        android:layout_marginTop="30dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tip_email_or_phone_sign_up"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_description_sign_up"
+        android:layout_marginTop="75dp"
+        android:elevation="5dp"
+        android:translationZ="15dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        android:textCursorDrawable="@color/black"
+
+        app:endIconMode="custom"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Email"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textCursorDrawable="@color/black">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tip_name_sign_up"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip_email_or_phone_sign_up"
+        android:layout_marginTop="5dp"
+        android:elevation="5dp"
+        android:translationZ="15dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        android:textCursorDrawable="@color/black"
+
+        app:endIconMode="clear_text"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Full Name"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textCursorDrawable="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tip_password_sign_up"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip_name_sign_up"
+        android:layout_marginTop="5dp"
+        android:elevation="5dp"
+        android:translationZ="15dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:passwordToggleEnabled="true"
+
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        android:textCursorDrawable="@color/black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textCursorDrawable="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tip_cfpassword_sign_up"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip_password_sign_up"
+        android:layout_marginTop="5dp"
+        android:elevation="5dp"
+        android:translationZ="15dp"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:passwordToggleEnabled="true"
+
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        android:textCursorDrawable="@color/black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textCursorDrawable="@color/black"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_below="@+id/tip_cfpassword_sign_up"
+        android:layout_marginTop="60dp"
+        android:elevation="10dp"
+        android:includeFontPadding="false"
+
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:backgroundTint="#1E1E1E"
+        android:fontFamily="@font/cunia"
+
+        android:textSize="20dp"
+        android:translationZ="15dp"
+
+        app:cornerRadius="10dp"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <LinearLayout
+        android:id="@+id/layout_have_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_below="@+id/btn_sign_up"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have account!"
+            android:textSize="17dp"
+            android:fontFamily="@font/ailerson_light"
+            android:textColor="@color/black"
+            >
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:includeFontPadding="false"
+            android:background="@null"
+            android:textSize="17dp"
+            android:fontFamily="@font/cunia"
+            android:textColor="@color/black"
+            >
+        </Button>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

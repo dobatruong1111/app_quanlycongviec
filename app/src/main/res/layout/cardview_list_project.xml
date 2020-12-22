@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:gravity="center">-->
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:xmls="http://schemas.android.com/apk/res-auto"
+        android:background="@null"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_marginTop="5dp"
+
+        android:elevation="15dp"
+        android:translationZ="15dp"
+        xmls:cardCornerRadius="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/img_list"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_list_project"
+                android:background="@drawable/bg_ic_list_task"
+                xmls:tint="@color/cardview_dark_background" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#909396"
+                android:layout_below="@+id/img_list"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageButton
+                android:id="@+id/img_btn_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_done_rename"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:background="@null"
+                android:backgroundTint="@color/white"
+                android:tint="@color/black"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                />
+
+            <EditText
+                android:id="@+id/ed_name_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_name_project"
+                android:layout_centerVertical="true"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ailerson_semibold"
+                android:maxLines="1"
+                android:minEms="5"
+                android:visibility="invisible"
+                android:textCursorDrawable="@color/black"
+                android:backgroundTint="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tv_name_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="project name"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@+id/img_list"
+                android:layout_alignTop="@+id/img_list"
+                android:textSize="16dp"
+                android:fontFamily="@font/ailerson_semibold"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                />
+
+            <TextView
+                android:id="@+id/tv_member_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Member"
+                android:textSize="14dp"
+                android:layout_alignBottom="@+id/img_list"
+                android:fontFamily="@font/ailerson_semibold"
+                android:layout_alignLeft="@+id/tv_name_project"
+                android:textColor="#B3000000"
+                />
+
+            <ImageButton
+                android:id="@+id/imgbtn_popup_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:backgroundTint="@color/white"
+                android:layout_centerVertical="true"
+                android:tint="#80000000"
+                />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+<!--</RelativeLayout>-->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập tên"
+        android:layout_margin="5dp"
+        android:textColor="#000000"/>
+    <EditText
+        android:id="@+id/edittext_card"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="tên card"
+        android:layout_margin="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="ok"
+        android:layout_gravity="right"
+        android:background="#3F51B5"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

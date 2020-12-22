@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".Fragment.homeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_home"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            style="@style/Widget.Design.AppBarLayout">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+
+                android:text="Home"
+                android:fontFamily="@font/cunia"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/layout_fill_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appbar_home"
+                android:weightSum="5">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout_home"
+                    style="@style/Widget.MaterialComponents.TabLayout.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+
+                    android:elevation="10dp"
+                    android:paddingLeft="5dp"
+                    app:tabGravity="fill"
+                    app:tabSelectedTextColor="@color/black"
+                    app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+
+                    app:tabTextColor="@color/white" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_paper_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appbar_home" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+
+            android:backgroundTint="#000000"
+            android:clickable="true"
+
+            android:elevation="10dp"
+            android:src="@drawable/ic_baseline_add_24" />
+
+    </RelativeLayout>
+
+</FrameLayout>

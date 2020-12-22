@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.notificationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_notify"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        style="@style/Widget.Design.AppBarLayout">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            android:text="Notification"
+            android:fontFamily="@font/cunia"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</FrameLayout>

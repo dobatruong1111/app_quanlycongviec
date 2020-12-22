@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Error!"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:fontFamily="@font/cunia"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_description_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Your email was not exit!"
+            android:textSize="17dp"
+            android:fontFamily="@font/ailerson_light"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/verify_fail_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="OK"
+            android:fontFamily="@font/cunia"
+            android:textSize="20dp"
+            android:includeFontPadding="false"
+            android:background="@drawable/bg_btn_confirm_verify"
+
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="screen"
+        android:src="@drawable/ic_baseline_error_24"
+        android:layout_centerHorizontal="true"
+        android:tintMode="multiply"
+        app:tint="#E53935">
+    </ImageView>
+
+</RelativeLayout>

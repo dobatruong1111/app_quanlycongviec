@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.searchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_search"
+            style="@style/Widget.Design.AppBarLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/cunia"
+                        android:layout_marginLeft="15dp"
+                        android:paddingTop="10dp"
+
+                        android:paddingBottom="10dp"
+                        android:text="Search"
+                        android:textColor="@color/black"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:hint="ID User or Name Project"
+                        android:fontFamily="@font/ailerson_light"
+                        android:backgroundTint="@color/white"
+                        android:id="@+id/edt_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="55dp"
+                        android:visibility="invisible" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_search1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:src="@drawable/ic_search_info"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginRight="20dp"
+
+                        android:tint="@color/black" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_search2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:src="@drawable/ic_search_info"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginRight="20dp"
+                        android:visibility="invisible"
+
+                        android:tint="@color/black" />
+
+                </RelativeLayout>
+            </com.google.android.material.appbar.MaterialToolbar>
+
+            <LinearLayout
+                android:id="@+id/layout_fill_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/appbar_home"
+                android:weightSum="5">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout_search"
+                    style="@style/Widget.MaterialComponents.TabLayout.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+
+                    android:elevation="10dp"
+                    android:paddingLeft="5dp"
+                    app:tabGravity="fill"
+                    app:tabSelectedTextColor="@color/black"
+                    app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+
+                    app:tabTextColor="@color/white"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <ProgressBar
+            android:id="@+id/loading_finding"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="#567BEB"
+            >
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/tv_result_for"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search result for:"
+            android:textSize="18dp"
+            android:layout_below="@+id/appbar_search"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/ailerson_light"
+            android:visibility="invisible"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toEndOf="@+id/tv_result_for"
+            android:layout_alignBottom="@+id/tv_result_for"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/ailerson_semibold"
+            android:textSize="18dp"
+            android:visibility="invisible"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_view_show_result_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_result_for"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+
+            />
+    </RelativeLayout>
+</FrameLayout>

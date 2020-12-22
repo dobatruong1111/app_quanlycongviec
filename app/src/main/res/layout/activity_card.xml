@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/linearLayout_parent"
+    android:focusable="true"
+    tools:context=".Activity.CardActivity">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#314CE1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <ImageButton
+                        android:id="@+id/arrow_back"
+                        android:background="#314CE1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginBottom="18dp"
+                        android:src="@drawable/ic_baseline_arrow_back_24" />
+                    <ImageButton
+                        android:visibility="gone"
+                        android:id="@+id/close_toolbar_edit_the_name_of_job"
+                        android:background="#314CE1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginBottom="18dp"
+                        android:src="@drawable/ic_baseline_close_24" />
+                    <ImageButton
+                        android:visibility="gone"
+                        android:id="@+id/close_toolbar_labels"
+                        android:background="#314CE1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginBottom="18dp"
+                        android:src="@drawable/ic_baseline_close_24" />
+                    <ImageButton
+                        android:visibility="gone"
+                        android:id="@+id/close_comments"
+                        android:background="#314CE1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginBottom="18dp"
+                        android:src="@drawable/ic_baseline_close_24" />
+
+                    <TextView
+                        android:id="@+id/title_toolbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toEndOf="@+id/arrow_back"
+                        android:textSize="22sp" />
+
+                    <ImageButton
+                        android:id="@+id/more_vert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="18dp"
+                        android:background="#314CE1"
+                        android:src="@drawable/ic_baseline_more_vert_24" />
+                    <ImageButton
+                        android:visibility="gone"
+                        android:id="@+id/check_toolbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="18dp"
+                        android:background="#314CE1"
+                        android:src="@drawable/ic_baseline_check_24" />
+                    <ImageButton
+                        android:visibility="gone"
+                        android:id="@+id/check_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="18dp"
+                        android:background="#314CE1"
+                        android:src="@drawable/ic_baseline_check_24" />
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/the_name_of_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="30dp"
+                        android:paddingLeft="25dp"
+                        android:text="Card 1"
+                        android:textSize="24sp"
+                        android:background="#314CE1"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/list_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TASK/ABC"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:background="#314CE1"/>
+                    <EditText
+                        android:id="@+id/edit_the_name_of_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="15dp"
+                        android:textSize="16sp"
+                        android:paddingBottom="20dp"
+                        android:hint="Chỉnh sửa miêu tả thẻ"/>
+
+                    <include
+                        android:id="@+id/view_body"
+                        layout="@layout/activity_body"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/move_focus"
+                        android:background="#7A7777"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:paddingLeft="25dp"
+                            android:src="@drawable/ic_baseline_mode_comment_24"/>
+                        <EditText
+                            android:id="@+id/comments"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:hint="Thêm nhận xét"
+                            android:textSize="16sp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="14dp"/>
+                    </LinearLayout>
+                    <include
+                        android:id="@+id/view_comments"
+                        layout="@layout/activity_comments"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

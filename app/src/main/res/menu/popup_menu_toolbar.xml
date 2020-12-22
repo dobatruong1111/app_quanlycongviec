@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/chia_se_lien_ket"
+        android:title="Chia sẻ liên kết"/>
+    <item
+        android:id="@+id/xem"
+        android:title="Xem"/>
+    <item
+        android:id="@+id/di_chuyen_the"
+        android:title="Di chuyển thẻ"/>
+    <item
+        android:id="@+id/sao_chep_the"
+        android:title="Sao chép thẻ"/>
+    <item
+        android:id="@+id/luu_tru"
+        android:title="Lưu trữ"/>
+</menu>

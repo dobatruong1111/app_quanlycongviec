@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "952010723680",
+    "project_id": "vidu-48a68",
+    "storage_bucket": "vidu-48a68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952010723680:android:fe1fd3195b4a719ac50e05",
+        "android_client_info": {
+          "package_name": "com.example.myapplication1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952010723680-6em6lkftmnv6mkvbmlbu4rmvk5oub9v7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk6-YL53x-NaC0u-llG9_FRKipwWu2IaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952010723680-6em6lkftmnv6mkvbmlbu4rmvk5oub9v7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

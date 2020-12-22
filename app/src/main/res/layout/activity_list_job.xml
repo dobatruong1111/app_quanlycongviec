@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7A7777">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="12dp"
+            android:text="Danh sách công việc..."/>
+        <ImageButton
+            android:id="@+id/close_list_job"
+            android:visibility="invisible"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_close_24"/>
+        <ImageButton
+            android:id="@+id/check_list_job"
+            android:saveEnabled="false"
+            android:visibility="invisible"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_check_24"/>
+        <ImageButton
+            android:id="@+id/more_vert_list_job"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_more_vert_24"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout_list_job"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/listview_list_job"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <EditText
+            android:id="@+id/ten_cong_viec_list_job"
+            android:hint="Tên công việc"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.introHomeScreen"
+
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rel_title_intro"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:background="@drawable/bg_homesceen_city"
+        >
+
+        <ImageView
+            android:id="@+id/imgv_matte_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CCFFFFFF"
+            />
+<!--        </ImageView>-->
+
+        <TextView
+            android:id="@+id/tv_intro_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Good Job"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/cunia"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+
+            android:includeFontPadding="false"
+            />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sign_in_intro"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:text="Sign In"
+        android:textSize="20dp"
+        android:fontFamily="@font/cunia"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#1E1E1E"
+        app:cornerRadius="10dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sign_up_intro"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:text="Sign Up"
+        android:textSize="20dp"
+        android:fontFamily="@font/cunia"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#1E3154"
+        app:cornerRadius="10dp"
+        app:elevation="20dp"
+        />
+
+
+</LinearLayout>

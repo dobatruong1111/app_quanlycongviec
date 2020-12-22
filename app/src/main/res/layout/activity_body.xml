@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout_body"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="25dp"
+            android:src="@drawable/ic_baseline_label_24"/>
+        <TextView
+            android:id="@+id/labels"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="0dp"
+            android:paddingTop="14dp"
+            android:text="Nhãn"/>
+        <GridView
+            android:saveEnabled="false"
+            android:id="@+id/gridview_labels"
+            android:numColumns="5"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_labels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/activity_labels"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="25dp"
+            android:src="@drawable/ic_baseline_person_24"/>
+        <TextView
+            android:id="@+id/members"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:paddingTop="14dp"
+            android:text="Thành viên"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="25dp"
+            android:src="@drawable/ic_baseline_calendar_today_24"/>
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:paddingTop="14dp"
+            android:text="Ngày hết hạn..."/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="25dp"
+            android:src="@drawable/ic_baseline_list_alt_24"/>
+        <TextView
+            android:id="@+id/list_job"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:paddingTop="14dp"
+            android:text="Danh sách công việc..."/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="25dp"
+            android:src="@drawable/ic_baseline_attach_file_24"/>
+        <TextView
+            android:id="@+id/attachments"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:paddingTop="14dp"
+            android:text="Tệp đính kèm..."/>
+    </LinearLayout>
+    <include
+        android:id="@+id/edit_list_attachments"
+        android:visibility="gone"
+        layout="@layout/activity_list_attachments"/>
+    <include
+        android:id="@+id/edit_list_job"
+        android:visibility="gone"
+        layout="@layout/activity_list_job"/>
+</LinearLayout>

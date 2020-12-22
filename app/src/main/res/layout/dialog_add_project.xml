@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="25dp"
+
+    >
+
+
+    <ImageButton
+        android:id="@+id/imgbtn_x_creat_porject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/ic_baseline_close_24"
+        android:background="@null"
+        android:tint="@color/black"
+        >
+    </ImageButton>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tip_project_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeWidth="1.5dp"
+        app:boxStrokeColor="@color/black"
+        android:layout_marginTop="25dp"
+
+        android:layout_below="@+id/imgbtn_x_creat_porject"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Project Name"
+
+
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tip_project_distribute"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/tip_project_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+
+        android:layout_marginTop="15dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="1.5dp"
+
+        app:endIconTint="@color/black"
+        android:textCursorDrawable="@color/black"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/drop_menu_distribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Select Distribute"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_create_project"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:text="Create"
+        android:fontFamily="@font/cunia"
+        android:includeFontPadding="false"
+        android:textSize="20dp"
+        android:textCursorDrawable="@color/black"
+
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+
+        android:backgroundTint="#000000"
+        android:layout_below="@+id/tip_project_distribute"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+
+        android:layout_alignRight="@+id/tip_project_distribute"
+
+        />
+
+</RelativeLayout>
